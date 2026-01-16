@@ -29,6 +29,17 @@ namespace PunishLib
                 ImGui.SameLine(0, 0);
                 ImGuiEx.Text($" by Puni.sh");
             });
+
+            ImGuiEx.ImGuiLineCentered("AboutHeaderKR", delegate
+            {
+                ImGuiEx.Text($"한글패치 ");
+                ImGui.PushFont(UiBuilder.IconFont);
+                ImGui.SameLine(0, 0);
+                ImGuiEx.Text(ImGuiColors.DalamudRed, FontAwesomeIcon.Heart.ToIconString());
+                ImGui.PopFont();
+                ImGui.SameLine(0, 0);
+                ImGuiEx.Text($" by RororrloTeh");
+            });
         }
 
         static void WithLoveByOther()
@@ -43,6 +54,17 @@ namespace PunishLib
                 ImGui.PopFont();
                 ImGui.SameLine(0, 0);
                 ImGuiEx.Text($" by {PunishLibMain.About.Developer}, published by Puni.sh");
+            });
+
+            ImGuiEx.ImGuiLineCentered("AboutHeaderKR", delegate
+            {
+                ImGuiEx.Text($"한글패치 ");
+                ImGui.PushFont(UiBuilder.IconFont);
+                ImGui.SameLine(0, 0);
+                ImGuiEx.Text(ImGuiColors.DalamudRed, FontAwesomeIcon.Heart.ToIconString());
+                ImGui.PopFont();
+                ImGui.SameLine(0, 0);
+                ImGuiEx.Text($" by RororrloTeh");
             });
         }
     }
